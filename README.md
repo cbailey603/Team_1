@@ -8,9 +8,10 @@
  - An additional learning curve, on top of learning new analysis tools 
 ## Individual Contributions 
 ### Connor
-  Created and managed project's GitHub repository 
+ - Created and managed project's GitHub repository 
+ - Merged datasets together in Tableau
 ### Tyler
-  Analyzed and visualized ACS data
+ - Analyzed and visualized ACS data
 ### Songqi
-  Analyzed and visualized aggregate sales data
+ - Analyzed and visualized aggregate sales data
 ### Lucas
