@@ -1,0 +1,44 @@
+---
+title: "Project:Question 2"
+author: "Songqi Cheng"
+date: "2023-02-15"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+df1 <- read.csv('/Users/danbigd/Desktop/GitHub/Team_1/project.acs.counties.csv')
+df2 <- read.csv('/Users/danbigd/Desktop/GitHub/Team_1/project.sales.counties.csv')
+merged_data <- merge(df1, df2, by = "county")
+library(dplyr)
+library(tidyr)
+
+
+grouped_data <- merged_data %>% 
+  group_by(county, category) 
+
+# Calculate total population and sale volume by geography and category
+summarized_data <- grouped_data %>% 
+  summarize(total_population = sum(population),
+            total_sale_volume = sum(sale.volume))
+
+# Calculate per capita consumption by dividing total sale volume by total population
+per_capita_data <- summarized_data %>% 
+  mutate(per_capita_consumption = total_sale_volume / total_population)
+
+# Rank geographies by per capita consumption across all categories
+ranked_data <- per_capita_data %>% 
+  group_by(category, county) %>% 
+  summarize(avg_per_capita_consumption = mean(per_capita_consumption)) %>% 
+  arrange(category, desc(avg_per_capita_consumption)) %>% 
+  group_by(category) %>% 
+  slice(1:10)
+
+# View the top 10 geographies with highest per capita consumption across all categories
+ranked_data
+```
+
+
