@@ -48,3 +48,31 @@ write.csv(percapitaSales, "C:/Users/rtyle/OneDrive/Documents/GitHub/Team_1/merge
 # county data
 
 counties <- read.csv("project.counties.csv")
+
+
+countySales <- data.frame(counties %>%
+                          filter(Table.Name == "project.sales.counties.csv") %>%
+                          group_by(county)%>%
+                          summarize(sum(sale.dollars)))
+
+View(countySales)
+
+countyPopulation <- counties %>%
+  filter(Table.Name == "project.acs.counties.csv") %>%
+  group_by(county) %>%
+  summarize(population)
+
+view(countyPopulation)
+
+print(nrow(population))
+print(nrow(dataFrame2))
+
+countySalesPopulation <-
+  countySales %>% right_join(countyPopulation)
+
+countyPercapitaSales <- countySalesPopulation %>%
+  mutate(perCapitaSales = sum.sale.dollars./population)
+
+view(countyPercapitaSales)
+
+write.csv(countyPercapitaSales, "C:/Users/rtyle/OneDrive/Documents/GitHub/Team_1/merged.project.data/counties_percapita_sales.csv")
