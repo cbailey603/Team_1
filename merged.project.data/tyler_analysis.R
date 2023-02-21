@@ -17,14 +17,14 @@ cities <- read.csv("project.cities.csv")
 
 # trying to combine population data and sales data. they have different number of rows and i have to filter by table name
 
-dataFrame2 <- data.frame(cities %>%
+citySales <- data.frame(cities %>%
   filter(Table.Name == "project.sales.cities.csv") %>%
   group_by(city)%>%
   summarize(sum(sale.dollars)))
 
 View(dataFrame2)
 
-population <- cities %>%
+cityPopulation <- cities %>%
   filter(Table.Name == "project.acs.cities.csv") %>%
   group_by(city) %>%
   summarize(population)
@@ -34,11 +34,17 @@ view(population)
 print(nrow(population))
 print(nrow(dataFrame2))
 
-dataFrame3 <-
-  dataFrame2 %>% right_join(population)
+salesPopulation <-
+  citySales %>% right_join(cityPopulation)
 
-dataFrame4 <- dataFrame3 %>%
+percapitaSales <- salesPopulation %>%
   mutate(perCapitaSales = sum.sale.dollars./population)
 
-View(dataFrame4)
+View(percapitaSales)
+str(dataFrame4)
 
+write.csv(percapitaSales, "C:/Users/rtyle/OneDrive/Documents/GitHub/Team_1/merged.project.data/cities_percapita_sales.csv")
+
+# county data
+
+counties <- read.csv("project.counties.csv")
