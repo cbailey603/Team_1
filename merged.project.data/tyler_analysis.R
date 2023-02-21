@@ -9,39 +9,26 @@ library(tidyverse)
 library(readxl)
 library(dplyr)
 
-getwd()
-list.files()
+# city data
 
 cities <- read.csv("project.cities.csv")
-
-
-# trying to combine population data and sales data. they have different number of rows and i have to filter by table name
 
 citySales <- data.frame(cities %>%
   filter(Table.Name == "project.sales.cities.csv") %>%
   group_by(city)%>%
   summarize(sum(sale.dollars)))
 
-View(dataFrame2)
-
 cityPopulation <- cities %>%
   filter(Table.Name == "project.acs.cities.csv") %>%
   group_by(city) %>%
   summarize(population)
 
-view(population)
-
-print(nrow(population))
-print(nrow(dataFrame2))
 
 salesPopulation <-
   citySales %>% right_join(cityPopulation)
 
 percapitaSales <- salesPopulation %>%
   mutate(perCapitaSales = sum.sale.dollars./population)
-
-View(percapitaSales)
-str(dataFrame4)
 
 write.csv(percapitaSales, "C:/Users/rtyle/OneDrive/Documents/GitHub/Team_1/merged.project.data/cities_percapita_sales.csv")
 
@@ -55,17 +42,12 @@ countySales <- data.frame(counties %>%
                           group_by(county)%>%
                           summarize(sum(sale.dollars)))
 
-View(countySales)
 
 countyPopulation <- counties %>%
   filter(Table.Name == "project.acs.counties.csv") %>%
   group_by(county) %>%
   summarize(population)
 
-view(countyPopulation)
-
-print(nrow(population))
-print(nrow(dataFrame2))
 
 countySalesPopulation <-
   countySales %>% right_join(countyPopulation)
@@ -73,6 +55,29 @@ countySalesPopulation <-
 countyPercapitaSales <- countySalesPopulation %>%
   mutate(perCapitaSales = sum.sale.dollars./population)
 
-view(countyPercapitaSales)
-
 write.csv(countyPercapitaSales, "C:/Users/rtyle/OneDrive/Documents/GitHub/Team_1/merged.project.data/counties_percapita_sales.csv")
+
+
+# zip code data
+
+zipCodes <- read.csv("project.zipcodes.csv")
+
+
+zipCodesales <- data.frame(zipCodes %>%
+                            filter(Table.Name == "project.sales.zipcodes.csv") %>%
+                            group_by(zipcode)%>%
+                            summarize(sum(sale.dollars)))
+
+zipCodePopulation <- zipCodes %>%
+  filter(Table.Name == "project.acs.zipcodes.csv") %>%
+  group_by(zipcode) %>%
+  summarize(population)
+
+
+zipCodeSalesPopulation <-
+  zipCodesales %>% right_join(zipCodePopulation)
+
+zipCodePercapitaSales <- zipCodeSalesPopulation %>%
+  mutate(perCapitaSales = sum.sale.dollars./population)
+
+write.csv(zipCodePercapitaSales, "C:/Users/rtyle/OneDrive/Documents/GitHub/Team_1/merged.project.data/zipcode_percapita_sales.csv")
