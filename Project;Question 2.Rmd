@@ -9,19 +9,27 @@ output: pdf_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+
 ```{r}
-df1 <- read.csv('/Users/danbigd/Desktop/GitHub/Team_1/project.acs.counties.csv')
-df2 <- read.csv('/Users/danbigd/Desktop/GitHub/Team_1/project.sales.counties.csv')
-merged_data <- merge(df1, df2, by = "county")
+
+rm(list=ls())
+
+```
+
+
+```{r}
+df1 <- read.csv('project.data/project.acs.counties.csv')
+df2 <- read.csv('project.data/project.sales.counties.csv')
+merged_data_counties <- merge(df1, df2, by = "county")
 library(dplyr)
 library(tidyr)
 
 
-grouped_data <- merged_data %>% 
+grouped_data_counties <- merged_data_counties %>% 
   group_by(county, category) 
 
-# Calculate total population and sale volume by geography and category
-summarized_data <- grouped_data %>% 
+# Calculate total population and sale volume by County and category
+summarized_data <- grouped_data_counties %>% 
   summarize(total_population = sum(population),
             total_sale_volume = sum(sale.volume))
 
@@ -30,7 +38,7 @@ per_capita_data <- summarized_data %>%
   mutate(per_capita_consumption = total_sale_volume / total_population)
 
 # Rank geographies by per capita consumption across all categories
-ranked_data <- per_capita_data %>% 
+counties_ranked_data <- per_capita_data %>% 
   group_by(category, county) %>% 
   summarize(avg_per_capita_consumption = mean(per_capita_consumption)) %>% 
   arrange(category, desc(avg_per_capita_consumption)) %>% 
@@ -38,7 +46,61 @@ ranked_data <- per_capita_data %>%
   slice(1:10)
 
 # View the top 10 geographies with highest per capita consumption across all categories
-ranked_data
+counties_ranked_data
+```
+
+```{r}
+df3 <- read.csv('project.data/project.acs.cities.csv')
+df4 <- read.csv('project.data/project.sales.cities.csv')
+merged_data_cities <- merge(df3, df4, by = "city")
+
+grouped_data_cities <- merged_data_cities %>% 
+  group_by(city, category) 
+
+# Calculate total population and sale volume by City and category
+summarized_data <- grouped_data_cities %>% 
+  summarize(total_population = sum(population),
+            total_sale_volume = sum(sale.volume))
+# Calculate per capita consumption by dividing total sale volume by total population
+per_capita_data <- summarized_data %>% 
+  mutate(per_capita_consumption = total_sale_volume / total_population)
+# Rank geographies by per capita consumption across all categories
+cities_ranked_data <- per_capita_data %>% 
+  group_by(category, city) %>% 
+  summarize(avg_per_capita_consumption = mean(per_capita_consumption)) %>% 
+  arrange(category, desc(avg_per_capita_consumption)) %>% 
+  group_by(category) %>% 
+  slice(1:10)
+
+# View the top 10 cities with highest per capita consumption across all categories
+cities_ranked_data
+
 ```
 
 
+```{r}
+df5 <- read.csv('project.data/project.acs.zipcodes.csv')
+df6 <- read.csv('project.data/project.sales.zipcodes.csv')
+merged_data_zipcodes <- merge(df5, df6, by = "zipcode")
+
+grouped_data_zipcodes <- merged_data_zipcodes %>% 
+  group_by(zipcode, category) 
+
+# Calculate total population and sale volume by zipcode and category
+summarized_data <- grouped_data_zipcodes %>% 
+  summarize(total_population = sum(population),
+            total_sale_volume = sum(sale.volume))
+# Calculate per capita consumption by dividing total sale volume by total population
+per_capita_data <- summarized_data %>% 
+  mutate(per_capita_consumption = total_sale_volume / total_population)
+# Rank geographies by per capita consumption across all categories
+zipcodes_ranked_data <- per_capita_data %>% 
+  group_by(category, zipcode) %>% 
+  summarize(avg_per_capita_consumption = mean(per_capita_consumption)) %>% 
+  arrange(category, desc(avg_per_capita_consumption)) %>% 
+  group_by(category) %>% 
+  slice(1:10)
+
+# View the top 10 zipcodes with highest per capita consumption across all categories
+zipcodes_ranked_data
+```
