@@ -98,21 +98,21 @@ zipcodes_ranked_data
 
 ### Top 10 Cities:
 
-!(images/top10_cities.png)
+(images/top10_cities.png)
 
 ### Top 10: Counties:
 
-!(images/top10_ccounties.png)
+(images/top10_ccounties.png)
 
 ### Top 10 Zipcodes:
 
-!(images/top10_zipcodes.png)
+(images/top10_zipcodes.png)
 
 ### Outlier Analysis:
 
 When examining the top cities for every alcohol category, a particular city stood out for sales of distilled spirits. In Mount Vernon, there is a much higher sale of distilled spirits per capita than in any other city in the state by some margin. This is demonstrated in the screenshot below:
 
-!(images/mount_vernon.png)
+(images/mount_vernon.png)
 
 ## Conclusion
 (in the works)
