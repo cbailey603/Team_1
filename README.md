@@ -100,7 +100,7 @@ zipcodes_ranked_data
 
 ![Top 10 Cities per capita](images/top10_cities.png)
 
-### Top 10: Counties:
+### Top 10 Counties:
 
 ![Top 10 Counties per capita](images/top10_counties.png)
 
