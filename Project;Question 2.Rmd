@@ -17,10 +17,8 @@ rm(list=ls())
 ```
 
 
-```{r}
-df1 <- read.csv('project.data/project.acs.counties.csv')
-df2 <- read.csv('project.data/project.sales.counties.csv')
-merged_data_counties <- merge(df1, df2, by = "county")
+```{r} 
+merged_data_counties <- read.csv("merged_counties.csv")
 library(dplyr)
 library(tidyr)
 
@@ -50,9 +48,7 @@ counties_ranked_data
 ```
 
 ```{r}
-df3 <- read.csv('project.data/project.acs.cities.csv')
-df4 <- read.csv('project.data/project.sales.cities.csv')
-merged_data_cities <- merge(df3, df4, by = "city")
+merged_data_cities <- read.csv("merged_cities.csv")
 
 grouped_data_cities <- merged_data_cities %>% 
   group_by(city, category) 
@@ -79,9 +75,7 @@ cities_ranked_data
 
 
 ```{r}
-df5 <- read.csv('project.data/project.acs.zipcodes.csv')
-df6 <- read.csv('project.data/project.sales.zipcodes.csv')
-merged_data_zipcodes <- merge(df5, df6, by = "zipcode")
+merged_data_zipcodes <- read.csv("merged_zipcodes.csv")
 
 grouped_data_zipcodes <- merged_data_zipcodes %>% 
   group_by(zipcode, category) 
