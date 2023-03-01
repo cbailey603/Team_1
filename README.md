@@ -186,7 +186,7 @@ When examining the top cities for every alcohol category, a particular city stan
 
 When entering a new market, it is strategically important to understand that market comprehensively. To achieve this goal, this report merged demographic and sales data across geographic levels and determined regions with a history of substantial demand for our products. The analysis and visualization created empower management and other decision-makers with the knowledge necessary to allocate resources efficiently and confidently. 
 
-The focus of this report is per capita sales and consumption throughout the levels of geography. The distribution of per capita sales is not uniform at the zipcode or city level and is heavily right-skewed, with a few outliers having high per capita sales. At the county level, the distribution level is more uniform but is still skewed right with a left tail. The top geographies by per capita consumption and sales are listed below:
+The focus of this report is per capita sales and consumption throughout the levels of geography. The distribution of per capita sales is not uniform at the zipcode or city level and is heavily right-skewed, with a few outliers having high per capita sales. At the county level, the distribution level is more uniform but is still skewed slightly right. The top geographies by per capita consumption and sales are listed below:
 
 Top 10 Geographies by per capita sales ($)
 |Rank|Cities       |Counties     |Zipcodes|
