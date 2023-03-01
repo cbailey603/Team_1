@@ -18,7 +18,7 @@ City sales saw identical ranking in popularity of product categories. However, t
 
 
 ## Research Question 2: 
-## Top 10 geographies for per capita consumption across every liquor category
+### Top 10 geographies for per capita consumption across every liquor category
 
 ### County Level
 library(dplyr)
