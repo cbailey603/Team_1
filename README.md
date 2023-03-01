@@ -151,41 +151,6 @@ zipcodes_ranked_data
 
 ### Top 10 geographies per capita dollar sales across all categories:
 
-To analyze the dollar sales per capita, the datasets are imported and merged:
-```{r merging_datasets}
-cities.acs <- read.csv("project.acs.cities.csv")
-cities.sales <- read.csv("project.sales.cities.csv")
-cities <- merge(x=cities.acs, y=cities.sales, by="city")
-
-counties.acs <- read.csv("project.acs.counties.csv")
-counties.sales <- read.csv("project.sales.counties.csv")
-counties <- merge(x=counties.acs, y=counties.sales, by="county")
-
-zipcode.acs <- read.csv("project.acs.zipcodes.csv")
-zipcode.sales <- read.csv("project.sales.zipcodes.csv")
-zipcode <- merge(x=zipcode.acs, y=zipcode.sales, by="zipcode")
-```
-
-Next, the per capita dollar and volume sale variables are calculated and joined to the merged datasets:
-```{r per_capita_variables_generation}
-cities$sale.dollars.capita <- cities$sale.dollars/cities$population
-cities$sale.volume.capita <- cities$sale.volume/cities$population
-
-counties$sale.dollars.capita <- counties$sale.dollars/counties$population
-counties$sale.volume.capita <- counties$sale.volume/counties$population
-
-zipcode$sale.dollars.capita <- zipcode$sale.dollars/zipcode$population
-zipcode$sale.volume.capita <- zipcode$sale.volume/zipcode$population
-```
-
-Then, these merged datasets are exported to three csv files for the differing levels of geography. 
-```{r per_capita_variables_generation}
-write.csv(cities, "project.cities.merged.csv")
-write.csv(counties, "project.countie.merged.csv")
-write.csv(zipcode, "project.zipcode.merged.csv")
-```
-These csv files are then opened in Tableau to visualize the per capita data. In Tableau, for all three levels of geography, the per capita dollar sales are mapped, with their size and color gradient, indicating how large sales per capita are in that region.  A top ten list is added, with the visual color breakdown highlighting the makeup of different alcohol categories in that region. Finally, a filter is added to examine the per capita dollar sales of specific alcohol categories and the corresponding top ten regions. These results are combined in a dashboard, which can be seen for all three levels of geography below 
-
 ### Top 10 Cities:
 
 ![Top 10 Cities per capita](images/top10_cities.png)
@@ -198,13 +163,9 @@ These csv files are then opened in Tableau to visualize the per capita data. In 
 
 ![Top 10 Zipcodes per capita](images/top10_zipcodes.png)
 
-### Analysis of the top regions for per capita sales:
+### Outlier Analysis:
 
-The intuitive choice regarding where to market alcohol in Iowa may be to choose areas with the highest density, given that these areas have the largest potential customer base. However, as seen from the analysis above, the areas with the highest population density do not necessarily correlate with the highest per capita sales of alcohol. For example, Des Moines, Cedar Rapids, and Davenport are the three largest cities in Iowa. However, they are not in the top ten cities for alcohol sales per capita. High per capita sales indicate a substantial demand for alcohol in a region. This fact makes the regions highlighted in the visualizations above as potentially good targets for increased marketing. Furthermore, the analysis can be drilled down to the alcohol category level, and regions with the highest per capita sales in a particular category can be identified and marketed to, specifically for that alcohol type. 
-
-### A Notable Outlier:
-
-When examining the top cities for every alcohol category, a particular city stands out for sales of distilled spirits. In Mount Vernon, there is a much higher sale of distilled spirits per capita than in any other city in the state, and by some margin. This indicates a high demand for distilled spirits in Mount Vernon and a potentially good target for marketing our distilled spirit brand. This is demonstrated in the screenshot below: 
+When examining the top cities for every alcohol category, a particular city stood out for sales of distilled spirits. In Mount Vernon, there is a much higher sale of distilled spirits per capita than in any other city in the state by some margin. This is demonstrated in the screenshot below:
 
 ![Mount Vernon - An outlier for Distilled Spirits](images/mount_vernon.png)
 
