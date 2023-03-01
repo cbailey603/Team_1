@@ -188,7 +188,11 @@ When entering a new market, it is strategically important to understand that mar
 
 The focus of this report is per capita sales and consumption throughout the levels of geography. The distribution of per capita sales is not uniform at the zipcode or city level and is heavily right-skewed, with a few outliers having high per capita sales. At the county level, the distribution level is more uniform but is still skewed slightly right. The top geographies by per capita consumption and sales are listed below:
 
-Top 10 Geographies by per capita sales ($)
+<table>
+<tr><th> Top 10 Geographies by per capita sales ($) </th><th> Top 10 Geographies by per capita volume </th></tr>
+<tr><td>
+
+|Table 1| Middle | Table 2|
 |Rank|Cities       |Counties     |Zipcodes|
 |----|-------------|-------------|--------|
 |1   |Wesley       |Dickinson    |52401   |
@@ -202,7 +206,9 @@ Top 10 Geographies by per capita sales ($)
 |9   |Fort Atkinson|Kossuth      |50311   |
 |10  |Swisher      |Pottawattamie|50483   |
 
-Top 10 Geographies by per capita volume
+
+</td><td>
+
 |Rank|Cities       |Counties     |Zipcodes|
 |----|-------------|-------------|--------|
 |1   |Bevington    |Dickinson    |50033   |
@@ -215,6 +221,9 @@ Top 10 Geographies by per capita volume
 |8   |Arnold's Park|Scott        |50311   |
 |9   |Floyd        |Johnson      |50483   |
 |10  |Holy Cross   |Clay         |52807   |
+
+
+</td></tr> </table>
 
 
 While the analysis in this report is significant, it is limited to three years and does not enable a large-scale historical analysis of the trends within the region. Expended datasets that include more years could reveal further insights about the region as a whole and about particular areas within Iowa. Additionally, a breakdown of the sales by date, as opposed to total annual sales, would enable an analysis of seasonal dynamics, improving our marketing and resource allocation throughout the year. 
