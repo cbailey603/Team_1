@@ -5,9 +5,8 @@ The analysis within this report is intended to inform and better equip the marke
 
 # Data Summary
 
-Demographic Analysis:
-
 The data analyzed in this report contains sales data from 2012 to 2016, measuring both dollar and volume sales, and demographic data for all regions of Iowa. The data is also segmented into three layers: zipcode level, county level, and city level. The focus of the analysis in this report is on per capita consumption and sales, so the first step of our analysis is to merge the demographic data with the sales data. This is done in R as opposed to Tableau, as R allows greater control of how the datasets are merged and the creation of the needed per capita variables. 
+Demographic Analysis:
 
 ![Race/Ethnicity and Income Analysis](images/ACS_visualization.png)
 
@@ -189,10 +188,34 @@ When entering a new market, it is strategically important to understand that mar
 
 The focus of this report is per capita sales and consumption throughout the levels of geography. The distribution of per capita sales is not uniform at the zipcode or city level and is heavily right-skewed, with a few outliers having high per capita sales. At the county level, the distribution level is more uniform but is still skewed right with a left tail. The top geographies by per capita consumption and sales are listed below:
 
-```{r echo = FALSE}
-library(knitr)
-kable(geography_rank_table.csv)
-```
+Top 10 Geographies by per capita sales ($)
+|Rank|Cities       |Counties     |Zipcodes|
+|----|-------------|-------------|--------|
+|1   |Wesley       |Dickinson    |52401   |
+|2   |Bevington    |Polk         |50033   |
+|3   |Mount Vernon |Cerro Gordo  |50314   |
+|4   |Spirit Lake  |Black Hawk   |51101   |
+|5   |Bancroft     |Johnson      |52166   |
+|6   |Arnold's Park|Scott        |50320   |
+|7   |Milford      |Carroll      |51331   |
+|8   |Floyd        |Linn         |52807   |
+|9   |Fort Atkinson|Kossuth      |50311   |
+|10  |Swisher      |Pottawattamie|50483   |
+
+Top 10 Geographies by per capita volume
+|Rank|Cities       |Counties     |Zipcodes|
+|----|-------------|-------------|--------|
+|1   |Bevington    |Dickinson    |50033   |
+|2   |Wesley       |Cerro Gordo  |52401   |
+|3   |Mount Vernon |Polk         |50314   |
+|4   |Spirit Lake  |Carroll      |52166   |
+|5   |Bancroft     |Black Hawk   |51101   |
+|6   |Milford      |Kossuth      |51331   |
+|7   |Fort Atkinson|Linn         |50320   |
+|8   |Arnold's Park|Scott        |50311   |
+|9   |Floyd        |Johnson      |50483   |
+|10  |Holy Cross   |Clay         |52807   |
+
 
 While the analysis in this report is significant, it is limited to three years and does not enable a large-scale historical analysis of the trends within the region. Expended datasets that include more years could reveal further insights about the region as a whole and about particular areas within Iowa. Additionally, a breakdown of the sales by date, as opposed to total annual sales, would enable an analysis of seasonal dynamics, improving our marketing and resource allocation throughout the year. 
 
