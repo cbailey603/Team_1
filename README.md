@@ -6,7 +6,7 @@ The analysis within this report is intended to inform and better equip the marke
 # Data Summary
 
 Demographic Analysis:
-!Race/Ethnicity and Income Analysis](images/ACS_visualization.png)
+![Race/Ethnicity and Income Analysis](images/ACS_visualization.png)
 
 The data analyzed in this report contains sales data from 2012 to 2016, measuring both dollar sales and volume sales, and demographic data for all regions of Iowa. (General ACS and Sales data analysis and visualization here)
 
@@ -19,7 +19,7 @@ City sales saw identical ranking in popularity of product categories. However, t
 
 # Data Analytics
 
-
+![Per Capita Sales Distribution Across Geographies](images/percapita_sales_distribution.png)
 
 ## Research Question 2: 
 ### Top 10 geographies for per capita consumption across every liquor category
