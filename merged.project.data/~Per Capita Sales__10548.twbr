@@ -1,0 +1,1440 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20224.22.1117.1841                               -->
+<workbook original-version='18.1' source-build='2022.4.0 (20224.22.1117.1841)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='counties_percapita_sales' inline='true' name='federated.04ae5bp0f5iyl11ek1d170cehtbu' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='counties_percapita_sales' name='textscan.1wsn80i10jy3f111vvdyl1f55rt6'>
+            <connection class='textscan' directory='C:/Users/rtyle/OneDrive/Documents/GitHub/Team_1/merged.project.data' filename='counties_percapita_sales.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1wsn80i10jy3f111vvdyl1f55rt6' name='counties_percapita_sales.csv' table='[counties_percapita_sales#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='county' ordinal='1' />
+            <column datatype='integer' name='sum.sale.dollars.' ordinal='2' />
+            <column datatype='integer' name='population' ordinal='3' />
+            <column datatype='real' name='perCapitaSales' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1wsn80i10jy3f111vvdyl1f55rt6' name='counties_percapita_sales.csv' table='[counties_percapita_sales#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='county' ordinal='1' />
+            <column datatype='integer' name='sum.sale.dollars.' ordinal='2' />
+            <column datatype='integer' name='population' ordinal='3' />
+            <column datatype='real' name='perCapitaSales' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[counties_percapita_sales.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[counties_percapita_sales.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[counties_percapita_sales.csv_7452B03696A94F03910675F14D53D47C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>county</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[county]</local-name>
+            <parent-name>[counties_percapita_sales.csv]</parent-name>
+            <remote-alias>county</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[counties_percapita_sales.csv_7452B03696A94F03910675F14D53D47C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sum.sale.dollars.</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sum.sale.dollars.]</local-name>
+            <parent-name>[counties_percapita_sales.csv]</parent-name>
+            <remote-alias>sum.sale.dollars.</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[counties_percapita_sales.csv_7452B03696A94F03910675F14D53D47C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>population</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[population]</local-name>
+            <parent-name>[counties_percapita_sales.csv]</parent-name>
+            <remote-alias>population</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[counties_percapita_sales.csv_7452B03696A94F03910675F14D53D47C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>perCapitaSales</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[perCapitaSales]</local-name>
+            <parent-name>[counties_percapita_sales.csv]</parent-name>
+            <remote-alias>perCapitaSales</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[counties_percapita_sales.csv_7452B03696A94F03910675F14D53D47C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='None' datatype='integer' name='[Per Capita Sales (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='1' formula='[perCapitaSales]' peg='0' size='10' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='counties_percapita_sales.csv' datatype='table' name='[__tableau_internal_object_id__].[counties_percapita_sales.csv_7452B03696A94F03910675F14D53D47C]' role='measure' type='quantitative' />
+      <column caption='County' datatype='string' name='[county]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column caption='Per Capita Sales' datatype='real' name='[perCapitaSales]' role='measure' type='quantitative' />
+      <column caption='Population' datatype='integer' name='[population]' role='measure' type='quantitative' />
+      <column caption='Sum.Sale.Dollars.' datatype='integer' name='[sum.sale.dollars.]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='counties_percapita_sales.csv' id='counties_percapita_sales.csv_7452B03696A94F03910675F14D53D47C'>
+            <properties context=''>
+              <relation connection='textscan.1wsn80i10jy3f111vvdyl1f55rt6' name='counties_percapita_sales.csv' table='[counties_percapita_sales#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='county' ordinal='1' />
+                  <column datatype='integer' name='sum.sale.dollars.' ordinal='2' />
+                  <column datatype='integer' name='population' ordinal='3' />
+                  <column datatype='real' name='perCapitaSales' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='cities_percapita_sales' inline='true' name='federated.1qhczo61ca8sjm1a7nelt01xmnoi' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='cities_percapita_sales' name='textscan.0t71rjj0ybj40n1a2iczr0hio2vt'>
+            <connection class='textscan' directory='C:/Users/rtyle/OneDrive/Documents/GitHub/Team_1/merged.project.data' filename='cities_percapita_sales.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0t71rjj0ybj40n1a2iczr0hio2vt' name='cities_percapita_sales.csv' table='[cities_percapita_sales#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='city' ordinal='1' />
+            <column datatype='real' name='sum.sale.dollars.' ordinal='2' />
+            <column datatype='integer' name='population' ordinal='3' />
+            <column datatype='real' name='perCapitaSales' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0t71rjj0ybj40n1a2iczr0hio2vt' name='cities_percapita_sales.csv' table='[cities_percapita_sales#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='city' ordinal='1' />
+            <column datatype='real' name='sum.sale.dollars.' ordinal='2' />
+            <column datatype='integer' name='population' ordinal='3' />
+            <column datatype='real' name='perCapitaSales' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[cities_percapita_sales.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[cities_percapita_sales.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cities_percapita_sales.csv_5E672E7428F24B00B74955797FCEDD55]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>city</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[city]</local-name>
+            <parent-name>[cities_percapita_sales.csv]</parent-name>
+            <remote-alias>city</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cities_percapita_sales.csv_5E672E7428F24B00B74955797FCEDD55]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sum.sale.dollars.</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[sum.sale.dollars.]</local-name>
+            <parent-name>[cities_percapita_sales.csv]</parent-name>
+            <remote-alias>sum.sale.dollars.</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cities_percapita_sales.csv_5E672E7428F24B00B74955797FCEDD55]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>population</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[population]</local-name>
+            <parent-name>[cities_percapita_sales.csv]</parent-name>
+            <remote-alias>population</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cities_percapita_sales.csv_5E672E7428F24B00B74955797FCEDD55]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>perCapitaSales</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[perCapitaSales]</local-name>
+            <parent-name>[cities_percapita_sales.csv]</parent-name>
+            <remote-alias>perCapitaSales</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cities_percapita_sales.csv_5E672E7428F24B00B74955797FCEDD55]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='None' datatype='integer' name='[Per Capita Sales (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='1' formula='[perCapitaSales]' peg='0' size='15' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='cities_percapita_sales.csv' datatype='table' name='[__tableau_internal_object_id__].[cities_percapita_sales.csv_5E672E7428F24B00B74955797FCEDD55]' role='measure' type='quantitative' />
+      <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Per Capita Sales' datatype='real' name='[perCapitaSales]' role='measure' type='quantitative' />
+      <column caption='Population' datatype='integer' name='[population]' role='measure' type='quantitative' />
+      <column caption='Sum.Sale.Dollars.' datatype='real' name='[sum.sale.dollars.]' role='dimension' type='ordinal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='100' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[City].[Name]' value='%null%' />
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+        <semantic-value key='[State].[Name]' value='&quot;Iowa&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='cities_percapita_sales.csv' id='cities_percapita_sales.csv_5E672E7428F24B00B74955797FCEDD55'>
+            <properties context=''>
+              <relation connection='textscan.0t71rjj0ybj40n1a2iczr0hio2vt' name='cities_percapita_sales.csv' table='[cities_percapita_sales#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='city' ordinal='1' />
+                  <column datatype='real' name='sum.sale.dollars.' ordinal='2' />
+                  <column datatype='integer' name='population' ordinal='3' />
+                  <column datatype='real' name='perCapitaSales' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='zipcode_percapita_sales' inline='true' name='federated.1y6y0ev1l905rz1be682h0vdxk6e' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='zipcode_percapita_sales' name='textscan.152ffh41y9qej917ksp13102u2gj'>
+            <connection class='textscan' directory='C:/Users/rtyle/OneDrive/Documents/GitHub/Team_1/merged.project.data' filename='zipcode_percapita_sales.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.152ffh41y9qej917ksp13102u2gj' name='zipcode_percapita_sales.csv' table='[zipcode_percapita_sales#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='zipcode' ordinal='1' />
+            <column datatype='real' name='sum.sale.dollars.' ordinal='2' />
+            <column datatype='integer' name='population' ordinal='3' />
+            <column datatype='real' name='perCapitaSales' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.152ffh41y9qej917ksp13102u2gj' name='zipcode_percapita_sales.csv' table='[zipcode_percapita_sales#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='zipcode' ordinal='1' />
+            <column datatype='real' name='sum.sale.dollars.' ordinal='2' />
+            <column datatype='integer' name='population' ordinal='3' />
+            <column datatype='real' name='perCapitaSales' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[zipcode_percapita_sales.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[zipcode_percapita_sales.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>zipcode</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[zipcode]</local-name>
+            <parent-name>[zipcode_percapita_sales.csv]</parent-name>
+            <remote-alias>zipcode</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sum.sale.dollars.</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[sum.sale.dollars.]</local-name>
+            <parent-name>[zipcode_percapita_sales.csv]</parent-name>
+            <remote-alias>sum.sale.dollars.</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>population</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[population]</local-name>
+            <parent-name>[zipcode_percapita_sales.csv]</parent-name>
+            <remote-alias>population</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>perCapitaSales</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[perCapitaSales]</local-name>
+            <parent-name>[zipcode_percapita_sales.csv]</parent-name>
+            <remote-alias>perCapitaSales</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='None' caption='Per Capita Sales (bin)' datatype='integer' name='[Per Capita Sales (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='1' formula='[perCapitaSales]' peg='0' size='10' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='zipcode_percapita_sales.csv' datatype='table' name='[__tableau_internal_object_id__].[zipcode_percapita_sales.csv_079BB7A07C684FF196A0E4D57C03043F]' role='measure' type='quantitative' />
+      <column caption='Per Capita Sales' datatype='real' name='[perCapitaSales]' role='measure' type='quantitative' />
+      <column caption='Population' datatype='integer' name='[population]' role='measure' type='quantitative' />
+      <column caption='Sum.Sale.Dollars.' datatype='real' name='[sum.sale.dollars.]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Zipcode' datatype='integer' default-format='*00000' name='[zipcode]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='zipcode_percapita_sales.csv' id='zipcode_percapita_sales.csv_079BB7A07C684FF196A0E4D57C03043F'>
+            <properties context=''>
+              <relation connection='textscan.152ffh41y9qej917ksp13102u2gj' name='zipcode_percapita_sales.csv' table='[zipcode_percapita_sales#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='integer' name='zipcode' ordinal='1' />
+                  <column datatype='real' name='sum.sale.dollars.' ordinal='2' />
+                  <column datatype='integer' name='population' ordinal='3' />
+                  <column datatype='real' name='perCapitaSales' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='demographic_analysis' inline='true' name='federated.0paia2z13pholz1e8pjcf1x80ac2' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='demographic_analysis' name='textscan.055v4zw0acioil13bnlxh0jc7b9e'>
+            <connection class='textscan' directory='C:/Users/rtyle/OneDrive/Documents/GitHub/Team_1' filename='demographic_analysis.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.055v4zw0acioil13bnlxh0jc7b9e' name='demographic_analysis.csv' table='[demographic_analysis#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='Race/Ethnicity' ordinal='1' />
+            <column datatype='real' name='Percent of Population' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.055v4zw0acioil13bnlxh0jc7b9e' name='demographic_analysis.csv' table='[demographic_analysis#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='Race/Ethnicity' ordinal='1' />
+            <column datatype='real' name='Percent of Population' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[demographic_analysis.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[demographic_analysis.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[demographic_analysis.csv_76063D007E1B44DC903C7894AFEEC3F6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Race/Ethnicity</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Race/Ethnicity]</local-name>
+            <parent-name>[demographic_analysis.csv]</parent-name>
+            <remote-alias>Race/Ethnicity</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[demographic_analysis.csv_76063D007E1B44DC903C7894AFEEC3F6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Percent of Population</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Percent of Population]</local-name>
+            <parent-name>[demographic_analysis.csv]</parent-name>
+            <remote-alias>Percent of Population</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[demographic_analysis.csv_76063D007E1B44DC903C7894AFEEC3F6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='real' name='[Percent of Population]' role='measure' type='ordinal' />
+      <column aggregation='CountD' datatype='string' name='[Race/Ethnicity]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='demographic_analysis.csv' datatype='table' name='[__tableau_internal_object_id__].[demographic_analysis.csv_76063D007E1B44DC903C7894AFEEC3F6]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='demographic_analysis.csv' id='demographic_analysis.csv_76063D007E1B44DC903C7894AFEEC3F6'>
+            <properties context=''>
+              <relation connection='textscan.055v4zw0acioil13bnlxh0jc7b9e' name='demographic_analysis.csv' table='[demographic_analysis#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='Race/Ethnicity' ordinal='1' />
+                  <column datatype='real' name='Percent of Population' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='education_analysis' inline='true' name='federated.1we9qyb00xkenp1ffv1jj006vv19' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='education_analysis' name='textscan.049s6zz1t86fue18o4vm11lhsn2z'>
+            <connection class='textscan' directory='C:/Users/rtyle/OneDrive/Documents/GitHub/Team_1' filename='education_analysis.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.049s6zz1t86fue18o4vm11lhsn2z' name='education_analysis.csv' table='[education_analysis#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='real' name='percentPopHS' ordinal='1' />
+            <column datatype='real' name='percentPopBach' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.049s6zz1t86fue18o4vm11lhsn2z' name='education_analysis.csv' table='[education_analysis#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='real' name='percentPopHS' ordinal='1' />
+            <column datatype='real' name='percentPopBach' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[education_analysis.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[education_analysis.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[education_analysis.csv_0DE1236289964B00A6BA01C8CA8405E8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>percentPopHS</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[percentPopHS]</local-name>
+            <parent-name>[education_analysis.csv]</parent-name>
+            <remote-alias>percentPopHS</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[education_analysis.csv_0DE1236289964B00A6BA01C8CA8405E8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>percentPopBach</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[percentPopBach]</local-name>
+            <parent-name>[education_analysis.csv]</parent-name>
+            <remote-alias>percentPopBach</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[education_analysis.csv_0DE1236289964B00A6BA01C8CA8405E8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='education_analysis.csv' datatype='table' name='[__tableau_internal_object_id__].[education_analysis.csv_0DE1236289964B00A6BA01C8CA8405E8]' role='measure' type='quantitative' />
+      <column caption='Percent Pop Bach' datatype='real' name='[percentPopBach]' role='measure' type='quantitative' />
+      <column caption='Percent Pop HS' datatype='real' name='[percentPopHS]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='education_analysis.csv' id='education_analysis.csv_0DE1236289964B00A6BA01C8CA8405E8'>
+            <properties context=''>
+              <relation connection='textscan.049s6zz1t86fue18o4vm11lhsn2z' name='education_analysis.csv' table='[education_analysis#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='real' name='percentPopHS' ordinal='1' />
+                  <column datatype='real' name='percentPopBach' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='income_analysis' inline='true' name='federated.00k70o30d0i6eg1g9f7sx13q2llo' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='income_analysis' name='textscan.1f38rkt0y53adu1eu133a0n567ox'>
+            <connection class='textscan' directory='C:/Users/rtyle/OneDrive/Documents/GitHub/Team_1' filename='income_analysis.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1f38rkt0y53adu1eu133a0n567ox' name='income_analysis.csv' table='[income_analysis#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='county' ordinal='1' />
+            <column datatype='integer' name='income' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1f38rkt0y53adu1eu133a0n567ox' name='income_analysis.csv' table='[income_analysis#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='county' ordinal='1' />
+            <column datatype='integer' name='income' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[income_analysis.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[income_analysis.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[income_analysis.csv_21E42C30922C4A778A4AB13E11938256]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>county</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[county]</local-name>
+            <parent-name>[income_analysis.csv]</parent-name>
+            <remote-alias>county</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[income_analysis.csv_21E42C30922C4A778A4AB13E11938256]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>income</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[income]</local-name>
+            <parent-name>[income_analysis.csv]</parent-name>
+            <remote-alias>income</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[income_analysis.csv_21E42C30922C4A778A4AB13E11938256]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Income (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='3' formula='[income]' peg='0' size='1489' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='income_analysis.csv' datatype='table' name='[__tableau_internal_object_id__].[income_analysis.csv_21E42C30922C4A778A4AB13E11938256]' role='measure' type='quantitative' />
+      <column caption='County' datatype='string' name='[county]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column caption='Income' datatype='integer' name='[income]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='income_analysis.csv' id='income_analysis.csv_21E42C30922C4A778A4AB13E11938256'>
+            <properties context=''>
+              <relation connection='textscan.1f38rkt0y53adu1eu133a0n567ox' name='income_analysis.csv' table='[income_analysis#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='county' ordinal='1' />
+                  <column datatype='integer' name='income' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Income Distribution (Counties)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Income Distribution Across Counties</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='income_analysis' name='federated.00k70o30d0i6eg1g9f7sx13q2llo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.00k70o30d0i6eg1g9f7sx13q2llo'>
+            <column datatype='integer' name='[Income (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='3' formula='[income]' peg='0' size='1489' />
+            </column>
+            <column-instance column='[income]' derivation='Count' name='[cnt:income:qk]' pivot='key' type='quantitative' />
+            <column caption='Income' datatype='integer' name='[income]' role='measure' type='quantitative' />
+            <column-instance column='[Income (bin)]' derivation='None' name='[none:Income (bin):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='tick-color' field='[federated.00k70o30d0i6eg1g9f7sx13q2llo].[none:Income (bin):qk]' value='#00000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' scope='rows' value='0' />
+            <format attr='border-style' data-class='total' scope='rows' value='none' />
+            <format attr='border-width' data-class='total' scope='cols' value='0' />
+            <format attr='border-style' data-class='total' scope='cols' value='none' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' scope='rows' value='0' />
+            <format attr='border-style' data-class='total' scope='rows' value='none' />
+            <format attr='border-width' data-class='total' scope='cols' value='0' />
+            <format attr='border-style' data-class='total' scope='cols' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e9e9e9' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#8cd17d' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.00k70o30d0i6eg1g9f7sx13q2llo].[cnt:income:qk]</rows>
+        <cols>[federated.00k70o30d0i6eg1g9f7sx13q2llo].[none:Income (bin):qk]</cols>
+        <show-full-range>
+          <column>[federated.00k70o30d0i6eg1g9f7sx13q2llo].[Income (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{822AD9CC-67C8-4633-A86C-55B8DBFDCE6E}' />
+    </worksheet>
+    <worksheet name='Per Capita Sales (Cities)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Per Capita Sales Distribution (Cities)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cities_percapita_sales' name='federated.1qhczo61ca8sjm1a7nelt01xmnoi' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1qhczo61ca8sjm1a7nelt01xmnoi'>
+            <column aggregation='None' datatype='integer' name='[Per Capita Sales (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='1' formula='[perCapitaSales]' peg='0' size='15' />
+            </column>
+            <column-instance column='[perCapitaSales]' derivation='Count' name='[cnt:perCapitaSales:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Per Capita Sales (bin)]' derivation='None' name='[none:Per Capita Sales (bin):qk]' pivot='key' type='quantitative' />
+            <column caption='Per Capita Sales' datatype='real' name='[perCapitaSales]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='omit-on-special' field='[federated.1qhczo61ca8sjm1a7nelt01xmnoi].[none:Per Capita Sales (bin):qk]' value='false' />
+            <format attr='break-on-special' field='[federated.1qhczo61ca8sjm1a7nelt01xmnoi].[none:Per Capita Sales (bin):qk]' value='false' />
+            <format attr='show-null-value-warning' field='[federated.1qhczo61ca8sjm1a7nelt01xmnoi].[none:Per Capita Sales (bin):qk]' value='false' />
+            <format attr='background-color' value='#e9e9e9' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#8cd17d' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1qhczo61ca8sjm1a7nelt01xmnoi].[cnt:perCapitaSales:qk]</rows>
+        <cols>[federated.1qhczo61ca8sjm1a7nelt01xmnoi].[none:Per Capita Sales (bin):qk]</cols>
+        <show-full-range>
+          <column>[federated.1qhczo61ca8sjm1a7nelt01xmnoi].[Per Capita Sales (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{AE30243D-BB6E-43AD-86C8-1C3CD2C5943D}' />
+    </worksheet>
+    <worksheet name='Per Capita Sales (Counties)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Per Capita Sales Distribution (Counties)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='counties_percapita_sales' name='federated.04ae5bp0f5iyl11ek1d170cehtbu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04ae5bp0f5iyl11ek1d170cehtbu'>
+            <column aggregation='None' datatype='integer' name='[Per Capita Sales (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='1' formula='[perCapitaSales]' peg='0' size='10' />
+            </column>
+            <column-instance column='[perCapitaSales]' derivation='Count' name='[cnt:perCapitaSales:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Per Capita Sales (bin)]' derivation='None' name='[none:Per Capita Sales (bin):qk]' pivot='key' type='quantitative' />
+            <column caption='Per Capita Sales' datatype='real' name='[perCapitaSales]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='omit-on-special' field='[federated.04ae5bp0f5iyl11ek1d170cehtbu].[none:Per Capita Sales (bin):qk]' value='false' />
+            <format attr='break-on-special' field='[federated.04ae5bp0f5iyl11ek1d170cehtbu].[none:Per Capita Sales (bin):qk]' value='false' />
+            <format attr='show-null-value-warning' field='[federated.04ae5bp0f5iyl11ek1d170cehtbu].[none:Per Capita Sales (bin):qk]' value='false' />
+            <format attr='background-color' value='#e9e9e9' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='1' />
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#8cd17d' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.04ae5bp0f5iyl11ek1d170cehtbu].[cnt:perCapitaSales:qk]</rows>
+        <cols>[federated.04ae5bp0f5iyl11ek1d170cehtbu].[none:Per Capita Sales (bin):qk]</cols>
+        <show-full-range>
+          <column>[federated.04ae5bp0f5iyl11ek1d170cehtbu].[Per Capita Sales (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{5181D048-35D9-4FA1-976F-3CFB4A8C7B90}' />
+    </worksheet>
+    <worksheet name='Per Capita Sales (Zip Codes)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Per Capita Sales Distribution (Zip Codes)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='zipcode_percapita_sales' name='federated.1y6y0ev1l905rz1be682h0vdxk6e' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1y6y0ev1l905rz1be682h0vdxk6e'>
+            <column aggregation='None' caption='Per Capita Sales (bin)' datatype='integer' name='[Per Capita Sales (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='1' formula='[perCapitaSales]' peg='0' size='10' />
+            </column>
+            <column-instance column='[perCapitaSales]' derivation='Count' name='[cnt:perCapitaSales:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Per Capita Sales (bin)]' derivation='None' name='[none:Per Capita Sales (bin):ok]' pivot='key' type='ordinal' />
+            <column caption='Per Capita Sales' datatype='real' name='[perCapitaSales]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e9e9e9' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='line-visibility' id='refline0' value='on' />
+            <format attr='line-pattern-only' id='refline0' value='dashed' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#8cd17d' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1y6y0ev1l905rz1be682h0vdxk6e].[cnt:perCapitaSales:qk]</rows>
+        <cols>[federated.1y6y0ev1l905rz1be682h0vdxk6e].[none:Per Capita Sales (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.1y6y0ev1l905rz1be682h0vdxk6e].[Per Capita Sales (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{2D6F8922-03F7-4CFE-A9C0-BD6BBEDDEB18}' />
+    </worksheet>
+    <worksheet name='Race/Ethniticy Breakdown'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Race/Ethnicity Breakdown</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='demographic_analysis' name='federated.0paia2z13pholz1e8pjcf1x80ac2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0paia2z13pholz1e8pjcf1x80ac2'>
+            <column datatype='real' name='[Percent of Population]' role='measure' type='ordinal' />
+            <column aggregation='CountD' datatype='string' name='[Race/Ethnicity]' role='dimension' type='nominal' />
+            <column-instance column='[Race/Ethnicity]' derivation='None' name='[none:Race/Ethnicity:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Percent of Population]' derivation='Sum' name='[pcto:sum:Percent of Population:ok]' pivot='key' type='ordinal'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Percent of Population]' derivation='Sum' name='[sum:Percent of Population:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-orientation' value='0' />
+            <format attr='text-align' value='left' />
+            <format attr='text-orientation' field='[federated.0paia2z13pholz1e8pjcf1x80ac2].[none:Race/Ethnicity:nk]' value='0' />
+            <format attr='text-align' field='[federated.0paia2z13pholz1e8pjcf1x80ac2].[none:Race/Ethnicity:nk]' value='left' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e9e9e9' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.0paia2z13pholz1e8pjcf1x80ac2].[none:Race/Ethnicity:nk]' />
+              <wedge-size column='[federated.0paia2z13pholz1e8pjcf1x80ac2].[sum:Percent of Population:qk]' />
+              <size column='[federated.0paia2z13pholz1e8pjcf1x80ac2].[sum:Percent of Population:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <annotations>
+          <annotation class='point' id='2' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run fontalignment='1' fontcolor='#787878'>Æ </run>
+              <run bold='true' fontalignment='1'><![CDATA[<[federated.0paia2z13pholz1e8pjcf1x80ac2].[none:Race/Ethnicity:nk]>]]></run>
+              <run fontalignment='1'>Æ&#10;</run>
+              <run bold='true' fontalignment='1'>3.5%</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields />
+                      <y-fields />
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0paia2z13pholz1e8pjcf1x80ac2].[none:Race/Ethnicity:nk]</field>
+                      <field>[federated.0paia2z13pholz1e8pjcf1x80ac2].[sum:Percent of Population:qk]</field>
+                      <field>[federated.0paia2z13pholz1e8pjcf1x80ac2].[pcto:sum:Percent of Population:ok]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;BLACK&quot;</value>
+                    <value>0.035000000000000003</value>
+                    <value>0.035000000000000003</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-7' y='-99' />
+          </annotation>
+          <annotation class='point' id='4' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run fontalignment='1' fontcolor='#787878'>Æ </run>
+              <run bold='true' fontalignment='1'><![CDATA[<[federated.0paia2z13pholz1e8pjcf1x80ac2].[none:Race/Ethnicity:nk]>]]></run>
+              <run fontalignment='1'>Æ&#10;</run>
+              <run bold='true' fontalignment='1'>2.3%</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields />
+                      <y-fields />
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0paia2z13pholz1e8pjcf1x80ac2].[none:Race/Ethnicity:nk]</field>
+                      <field>[federated.0paia2z13pholz1e8pjcf1x80ac2].[sum:Percent of Population:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;ASIAN&quot;</value>
+                    <value>0.023</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-159' y='-45' />
+          </annotation>
+          <annotation class='point' id='6' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true'><![CDATA[<[federated.0paia2z13pholz1e8pjcf1x80ac2].[none:Race/Ethnicity:nk]>]]></run>
+              <run>Æ&#10;</run>
+              <run bold='true'>90.5%</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields />
+                      <y-fields />
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0paia2z13pholz1e8pjcf1x80ac2].[none:Race/Ethnicity:nk]</field>
+                      <field>[federated.0paia2z13pholz1e8pjcf1x80ac2].[sum:Percent of Population:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;WHITE&quot;</value>
+                    <value>0.90500000000000003</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-63' y='64' />
+          </annotation>
+          <annotation class='point' id='7' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run fontalignment='1' fontcolor='#787878'>Æ </run>
+              <run bold='true' fontalignment='1'><![CDATA[<[federated.0paia2z13pholz1e8pjcf1x80ac2].[none:Race/Ethnicity:nk]>]]></run>
+              <run fontalignment='1'>Æ&#10;</run>
+              <run bold='true' fontalignment='1'>0.03%</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields />
+                      <y-fields />
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0paia2z13pholz1e8pjcf1x80ac2].[none:Race/Ethnicity:nk]</field>
+                      <field>[federated.0paia2z13pholz1e8pjcf1x80ac2].[sum:Percent of Population:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;INDIAN&quot;</value>
+                    <value>0.0030000000000000001</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='163' y='-69' />
+          </annotation>
+          <annotation class='point' id='8' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run fontalignment='1' fontcolor='#787878'>Æ </run>
+              <run bold='true' fontalignment='1'><![CDATA[<[federated.0paia2z13pholz1e8pjcf1x80ac2].[none:Race/Ethnicity:nk]>]]></run>
+              <run fontalignment='1'>&#10;2.0%</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields />
+                      <y-fields />
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0paia2z13pholz1e8pjcf1x80ac2].[none:Race/Ethnicity:nk]</field>
+                      <field>[federated.0paia2z13pholz1e8pjcf1x80ac2].[sum:Percent of Population:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;MULTI&quot;</value>
+                    <value>0.02</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='232' y='23' />
+          </annotation>
+          <annotation class='point' id='10' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontalignment='1'><![CDATA[<[federated.0paia2z13pholz1e8pjcf1x80ac2].[none:Race/Ethnicity:nk]>]]></run>
+              <run fontalignment='1'>Æ&#10;</run>
+              <run bold='true' fontalignment='1'>1.3%</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields />
+                      <y-fields />
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0paia2z13pholz1e8pjcf1x80ac2].[none:Race/Ethnicity:nk]</field>
+                      <field>[federated.0paia2z13pholz1e8pjcf1x80ac2].[sum:Percent of Population:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;OTHER&quot;</value>
+                    <value>0.012999999999999999</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='211' y='105' />
+          </annotation>
+        </annotations>
+      </table>
+      <simple-id uuid='{7A149288-EEB5-4347-B410-F1DAC3B01D9D}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='49136' id='3' name='Per Capita Sales (Counties)' w='49501' x='50000' y='50000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='49136' id='5' name='Per Capita Sales (Cities)' w='99002' x='499' y='864'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='49136' id='6' name='Per Capita Sales (Zip Codes)' w='49501' x='499' y='50000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='1' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{2C30D471-1923-473D-9D4F-71799891F84F}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.5' source-height='199'>
+    <window class='worksheet' name='Per Capita Sales (Cities)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8A402613-0366-46AC-A311-DA47F25F67B8}' />
+    </window>
+    <window class='worksheet' name='Per Capita Sales (Counties)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{346FEB97-D695-4295-B90F-E1820741290C}' />
+    </window>
+    <window class='worksheet' name='Per Capita Sales (Zip Codes)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{D4ACA135-4068-4378-823A-AE8C34555D28}' />
+    </window>
+    <window class='worksheet' name='Race/Ethniticy Breakdown'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0paia2z13pholz1e8pjcf1x80ac2].[none:Race/Ethnicity:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.0paia2z13pholz1e8pjcf1x80ac2].[sum:Percent of Population:qk]' show-title='false' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{7B425D21-50DC-480E-8EEB-5F9A46686919}' />
+    </window>
+    <window class='worksheet' name='Income Distribution (Counties)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DB7AD706-A7ED-4E20-9291-693DD308E8A8}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Per Capita Sales (Cities)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Per Capita Sales (Counties)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Per Capita Sales (Zip Codes)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='6' />
+      <simple-id uuid='{130CF247-5203-4393-8701-91B7A7020C77}' />
+    </window>
+  </windows>
+</workbook>

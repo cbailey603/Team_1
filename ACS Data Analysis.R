@@ -56,24 +56,18 @@ demographicDataFrame <- demographicDataFrame %>%
   #mutate_at(c("Percent of Population") * 100)
 
 str(demographicDataFrame)
-# plot pie chart
+getwd()
 
-ggplot(demographicDataFrame, aes(x = "", y = `Percent of Population`, fill = `Race/Ethnicity`)) +
-  geom_bar(stat = "identity", width = 1) +
-  coord_polar("y", start = 0) +
-  theme_void() +
-  labs(x = NULL, y = NULL, fill = NULL)
-
-
+write.csv(demographicDataFrame, "C:/Users/rtyle/OneDrive/Documents/GitHub/Team_1/demographic_analysis.csv")
 
 # visualize distribution of income across counties
 
 incomeByCounty <- counties %>%
   summarize(county, income)
 
-ggplot(incomeByCounty, aes(x = income)) +
-  geom_histogram()
+str(incomeByCounty)
 
+write.csv(incomeByCounty, "C:/Users/rtyle/OneDrive/Documents/GitHub/Team_1/income_analysis.csv")
 
 # analysis on percent of population with at least a HS diploma or at least bachelors
 educatedPopulation <- cities %>%
@@ -82,5 +76,6 @@ educatedPopulation <- cities %>%
   summarize(percentPopHS = (sum(popHS, na.rm = TRUE)/(sum(population))*100), percentPopBach = (sum(popBach, na.rm = TRUE)/sum(population))*100)
 educatedPopulation
 
+write.csv(educatedPopulation, "C:/Users/rtyle/OneDrive/Documents/GitHub/Team_1/education_analysis.csv")
 
 
