@@ -14,7 +14,8 @@ The data analyzed in this report contains sales data from 2012 to 2016, measurin
 
 ![General Sales analysis of City Level Across Categories ](images/General_City.png)
 
-Across City and County level, the sales data projected similar pattern as Whisky, Vodka and Rum dominated the most part of the sales, followed by Misc, Tequila, Brandy, Schnapps, Gin, etc. The rankings acroos the top 10 counties with most sales in dollars and most sales in volume stayed constant, with Polk, Linn and Scott county taking the first three across dollar sale and volume sale.
+Across City and County level, the sales data projected similar pattern as Whisky, Vodka and Rum dominated the most part of the sales, followed by Misc, Tequila, Brandy, Schnapps, Gin, etc. The rankings across the top 10 counties with most sales in dollars and most sales in volume stayed constant, with Polk, Linn and Scott county taking the first three across dollar sale and volume sale.
+
 City sales saw identical ranking in popularity of product categories. However, there is change of ranking between sale in dollar and sale in volume. Cities including Waterloo, Iowa city and West Des Moines swtiched places, the reason of this swtich in places could due to the fact that Vodka's retail prices are lower but sold in greater volume, hence causing the change in ranking, besides this, the pattern of the city level analysis stayed constant with the county level.
 
 # Data Analytics
@@ -213,7 +214,8 @@ When examining the top cities for every alcohol category, a particular city stan
 ![Mount Vernon - An outlier for Distilled Spirits](images/mount_vernon.png)
 
 ## Conclusion
-(in the works)
+
+Q2: The most popular liquor category remained constant throughout the county, city and zipcode level, the geographies with most per capita consumption also aligns with the general sales analysis data, supporting the assumption of the popularity of Whisky, Vodka and Rum. Out of all the geographies, Dickinson County and Bevington city stood out, as they have the highest per capita consumption in their geographical category respectively, while not being in the top 10 of overall sale in dollars and volume. This could mean that the drinking culture in these two places is more profound comparing to other counties and cities in the state of Iowa.
 
 ## Policy Recommendation
 (in the works)
