@@ -192,7 +192,6 @@ The focus of this report is per capita sales and consumption throughout the leve
 <tr><th> Top 10 Geographies by per capita sales ($) </th><th> Top 10 Geographies by per capita volume </th></tr>
 <tr><td>
 
-|Table 1| Middle | Table 2|
 |Rank|Cities       |Counties     |Zipcodes|
 |----|-------------|-------------|--------|
 |1   |Wesley       |Dickinson    |52401   |
