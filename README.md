@@ -7,7 +7,7 @@ The analysis within this report was requested by our Marketing and Sales departm
 2. What are the ranks of top 10 geographies for per capita consumption across liquor categories?
 3. Are there any outliers that have high per capita sales in on ly one specific liquor category?
 
-These questions will be answered within the Data Analysis portion of the report. The Conclusion section will serve as a summary of our analysis. Laslty, the Policy Recommendation portion will highlight our recommendations for ways to efficiently enter the Iowa market.
+These questions will be answered within the Data Analysis portion of the report. The Conclusion section will serve as a summary of our analysis. The Policy Recommendation portion will highlight our recommendations for ways to efficiently enter the Iowa market. Lastly, data analysis was completed using R and visualizations were completed in Tableau. We believe R is a more robust data analysis platform and Tableau offers great visualization capabilities. This report will not include any code snippets. For those interested in a code review please refer to our R files in the repo.
 
 # General Demographic and Sales Data Analysis
 
