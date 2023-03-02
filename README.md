@@ -1,23 +1,42 @@
 # Team_1 
 
 # Introduction 
-The analysis within this report is intended to inform and better equip the marketing manager of an alcohol distributor entering Iowa’s market. An analysis of per capita sales across regions of Iowa will demonstrate where consumption of alcohol is highest, differentiated between different alcohol categories. This will allow the marketing manager to better allocate resources and efforts to regions where they can be most effective in increasing sales.
+The analysis within this report was requested by our Marketing and Sales department in the context of helping them decide how we as a liquor distributor should enter the Iowa market. The following report begins by discussing general demographic and sales data related to the Iowa market. The the report focuses in on per capita sales across geographies within Iowa (counties, cities and zip codes). Specifically, there are 3 key questions the report aims to bring clarity to.
 
-# Data Summary
+1. What is the distribution of per capita sales across geographies? 
+2. What are the ranks of top 10 geographies for per capita consumption across liquor categories?
+3. Are there any outliers that have high per capita sales in on ly one specific liquor category?
 
-The data analyzed in this report contains sales data from 2012 to 2016, measuring both dollar and volume sales, and demographic data for all regions of Iowa. The data is also segmented into three layers: zipcode level, county level, and city level. The focus of the analysis in this report is on per capita consumption and sales, so the first step of our analysis is to merge the demographic data with the sales data. This is done in R as opposed to Tableau, as R allows greater control of how the datasets are merged and the creation of the needed per capita variables. 
-Demographic Analysis:
+These questions will be answered within the Data Analysis portion of the report. The Conclusion section will serve as a summary of our analysis. Laslty, the Policy Recommendation portion will highlight our recommendations for ways to efficiently enter the Iowa market.
+
+# General Demographic and Sales Data Analysis
+
+## Demographic and Income Analysis
+
+The following visualization points out that the Iowa market is predominately WHITE aounting to 90.5% of the population. We also analyzed the distribution of median income across counties in Iowa. We see that the median income of all counties in Iowa hovers around $31,000 with a standard distribution with few outliers. This indicates that income on a county level is evenly disbursed.
 
 ![Race/Ethnicity and Income Analysis](images/ACS_visualization.png)
+
+## Sales and Consumption Analysis
+
+The data analyzed in the below charts contains sales data from 2012 to 2016, measuring both dollar and volume sales, and demographic data for all regions of Iowa. The data is also segmented into three layers: zipcode level, county level, and city level. The focus of the analysis in this report is on per capita consumption and sales, so the first step of our analysis is to merge the demographic data with the sales data. This is done in R as opposed to Tableau, as R allows greater control of how the datasets are merged and the creation of the needed per capita variables. 
+Demographic Analysis:
 
 ![General Sales analysis of County Level Across Categories ](images/General_County.png)
 
 ![General Sales analysis of City Level Across Categories ](images/General_City.png)
 
 Across City and County level, the sales data projected similar pattern as Whisky, Vodka and Rum dominated the most part of the sales, followed by Misc, Tequila, Brandy, Schnapps, Gin, etc. The rankings acroos the top 10 counties with most sales in dollars and most sales in volume stayed constant, with Polk, Linn and Scott county taking the first three across dollar sale and volume sale.
+
 City sales saw identical ranking in popularity of product categories. However, there is change of ranking between sale in dollar and sale in volume. Cities including Waterloo, Iowa city and West Des Moines swtiched places, the reason of this swtich in places could due to the fact that Vodka's retail prices are lower but sold in greater volume, hence causing the change in ranking, besides this, the pattern of the city level analysis stayed constant with the county level.
 
-# Data Analytics
+# Per Capita Sales/Volume Data Analysis
+
+This section of our report will breakdown per capita sales and consumption across geographies. 
+
+## Per Capita Sales
+
+We see in the following charts how per capita sales are distributed across counties, cities and zip codes. Per capita sales is defined as total sales per geography / total popluation. We see within the visualizations that per capita sales begins to skew towards smaller amounts as we become more granular with the geographies. For instance, with city distribution of per capita sales we see a high amount of cities with less than $50 of per capita sales per year. The reason being is that as our locations become more granular we have less sales dollars and less population. This level of granularity is helpful to identify outliers where greater sales potential lies. As we see in the zip codes graph that are a few zip codes with very high per capita sales that could represent a potentially lucrative entry market. More to come on high per capita geographies.
 
 ![Per Capita Sales Distribution Across Geographies](images/percapita_sales_distribution.png)
 
