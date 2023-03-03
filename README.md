@@ -26,11 +26,7 @@ Demographic Analysis:
 
 ![General Sales analysis of City Level Across Categories ](images/General_City.png)
 
-<<<<<<< HEAD
-Across City and County level, the sales data projected similar pattern as Whisky, Vodka and Rum dominated the most part of the sales, followed by Misc, Tequila, Brandy, Schnapps, Gin, etc. The rankings across the top 10 counties with most sales in dollars and most sales in volume stayed constant, with Polk, Linn and Scott county taking the first three across dollar sale and volume sale.
-=======
 Across City and County level, the sales data projected similar pattern as Whisky, Vodka and Rum dominated the most part of the sales, followed by Misc, Tequila, Brandy, Schnapps, Gin, etc. The rankings acroos the top 10 counties with most sales in dollars and most sales in volume stayed constant, with Polk, Linn and Scott county taking the first three across dollar sale and volume sale.
->>>>>>> 3c6f3f6d028517ccd692799e38c35a16ecf8f66c
 
 City sales saw identical ranking in popularity of product categories. However, there is change of ranking between sale in dollar and sale in volume. Cities including Waterloo, Iowa city and West Des Moines swtiched places, the reason of this swtich in places could due to the fact that Vodka's retail prices are lower but sold in greater volume, hence causing the change in ranking, besides this, the pattern of the city level analysis stayed constant with the county level.
 
@@ -38,13 +34,13 @@ City sales saw identical ranking in popularity of product categories. However, t
 
 This section of our report will breakdown per capita sales and consumption across geographies. 
 
-## Per Capita Sales
+## Per Capita Sales Distribution
 
 We see in the following charts how per capita sales are distributed across counties, cities and zip codes. Per capita sales is defined as total sales per geography / total popluation. We see within the visualizations that per capita sales begins to skew towards smaller amounts as we become more granular with the geographies. For instance, with city distribution of per capita sales we see a high amount of cities with less than $50 of per capita sales per year. The reason being is that as our locations become more granular we have less sales dollars and less population. This level of granularity is helpful to identify outliers where greater sales potential lies. As we see in the zip codes graph that are a few zip codes with very high per capita sales that could represent a potentially lucrative entry market. More to come on high per capita geographies.
 
 ![Per Capita Sales Distribution Across Geographies](images/percapita_sales_distribution.png)
 
-## Research Question 2: 
+## Per Capita Consumption
 
 ### County Level
 
@@ -64,13 +60,15 @@ Similar to the county level, the most popular alcohol is still Whisky, Vodka and
 
 The top 3 zipcodes are within Bevington, Cedar Rapids and Des Moines repectively. Since we have already ruled out the feasibility of conducting experiment at Bevington, we can firstly plan to begin the experiment at the most popular alcohol shopping destinations within the corresponding zipcodes of the City of Cedar Rapids and Des Moines.
 
+### Analysis of Per Capita Consumption
 
-### Top 10 geographies per capita dollar sales across all categories:
+The most popular liquor category remained constant throughout the county, city and zipcode level, the geographies with most per capita consumption also aligns with the general sales analysis data, supporting the assumption of the popularity of Whisky, Vodka and Rum. Out of all the geographies, Dickinson County and Bevington city stood out, as they have the highest per capita consumption in their geographical category respectively, while not being in the top 10 of overall sale in dollars and volume. This could mean that the drinking culture in these two places is more profound comparing to other counties and cities in the state of Iowa.
+
+## Per Capita Sales
 
 To determine and visualize the top geographies by per capita dollar sales, we use Tableau instead of R for a few reasons. Firstly, Tableau enables us to visually depict the per capita sales data on a map of Iowa by employing the longitude and latitude measures, which are unique to the program. Secondly, we can combine multiple visualizations into a dashboard that can be collectively filtered, which, as discussed later in the report, is helpful when examining the geographic trends for specific alcohol categories. Lastly, and more generally, Tableau has intuitive and powerful formatting tools, which allow our visualizations to be aesthetically pleasing. 
 
 In Tableau, for all three levels of geography, the per capita dollar sales are mapped onto a map of Iowa, with their size and color gradient, indicating how large sales per capita are in that region.  This map is combined in a dashboard with a top ten list bar chart, with the visual color breakdown highlighting the makeup of different alcohol categories in that region. Finally, a filter is added to the dashboard to examine the per capita dollar sales of specific alcohol categories and the corresponding top ten regions. The results for all three levels of geography can be seen below 
-
 
 ### Top 10 Cities:
 
@@ -96,9 +94,6 @@ When examining the top cities for every alcohol category, a particular city stan
 
 ## Conclusion
 
-<<<<<<< HEAD
-Q2: The most popular liquor category remained constant throughout the county, city and zipcode level, the geographies with most per capita consumption also aligns with the general sales analysis data, supporting the assumption of the popularity of Whisky, Vodka and Rum. Out of all the geographies, Dickinson County and Bevington city stood out, as they have the highest per capita consumption in their geographical category respectively, while not being in the top 10 of overall sale in dollars and volume. This could mean that the drinking culture in these two places is more profound comparing to other counties and cities in the state of Iowa.
-=======
 When entering a new market, it is strategically important to understand that market comprehensively. To achieve this goal, this report merged demographic and sales data across geographic levels and determined regions with a history of substantial demand for our products. The analysis and visualization created empower management and other decision-makers with the knowledge necessary to allocate resources efficiently and confidently. 
 
 The focus of this report is per capita sales and consumption throughout the levels of geography. The distribution of per capita sales is not uniform at the zipcode or city level and is heavily right-skewed, with a few outliers having high per capita sales. At the county level, the distribution level is more uniform but is still skewed slightly right. The top geographies by per capita consumption and sales are listed below:
