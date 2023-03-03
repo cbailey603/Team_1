@@ -82,11 +82,11 @@ In Tableau, for all three levels of geography, the per capita dollar sales are m
 
 ![Top 10 Zipcodes per capita](images/top10_zipcodes.png)
 
-### Analysis of the top regions for per capita sales:
+### Analysis of Per Capita Sales:
 
 The intuitive choice regarding where to enter the alcohol market in Iowa may be to choose areas with the highest population density or total sales, given that these areas have the largest potential customer base. However, as seen from the analysis above, the areas with the highest total dollar sales do not necessarily correlate with the highest per capita sales of alcohol. For example, Des Moines, Cedar Rapids, and Davenport are the three largest cities in Iowa and have the highest total dollar sales. However, they are not in the top ten cities for alcohol sales per capita. High per capita sales indicate a substantial demand for alcohol in a region. This fact makes the regions highlighted in the visualizations above potentially good regions to enter the Iowa market. Furthermore, the analysis can be drilled down to the alcohol category level, and regions with the highest per capita sales in a particular category can be identified and marketed to, specifically for that alcohol type. 
 
-### A Notable Outlier:
+### A Notable Outlier
 
 When examining the top cities for every alcohol category, a particular city stands out for sales of distilled spirits. In Mount Vernon, there is a much higher sale of distilled spirits per capita than in any other city in the state, and by some margin. This indicates a high demand for distilled spirits in Mount Vernon, making the region a potential target for marketing our distilled spirit brand. This is demonstrated in the screenshot below: 
 
@@ -136,8 +136,6 @@ The focus of this report is per capita sales and consumption throughout the leve
 
 
 While the analysis in this report is significant, it is limited to three years and does not enable a large-scale historical analysis of the trends within the region. Expended datasets that include more years could reveal further insights about the region as a whole and about particular areas within Iowa. Additionally, a breakdown of the sales by date, as opposed to total annual sales, would enable an analysis of seasonal dynamics, improving our marketing and resource allocation throughout the year. 
-
->>>>>>> 82eed71ef0a6568c79e80399fc0678d363d0f37e
 
 ## Policy Recommendation
 
